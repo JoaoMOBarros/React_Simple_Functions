@@ -8,12 +8,34 @@ import Repeticao from './component/Repeticao.jsx'
 import Condicional from './component/Condicional.jsx'
 import CondicionalIf from './component/CondicinalIf.jsx'
 
+import Pai from './component/comunicacao/direta/Pai.jsx'
+import Super from './component/comunicacao/indireta/Super.jsx'
+
+import Input from './component/form/Input'
+import InputBlock from './component/search/InputBlock'
+
 import Card from './component/layout/Card'
 import {Link} from 'react-router-dom'
 
 export default(props)=>(
     <div>
         <div className="app">
+
+        <Card titulo="#10 - Search Function" color="#CC527A">
+            <InputBlock/>
+        </Card>
+
+        <Card titulo="#09 - Input"  color="#E8175D">
+            <Input/>
+        </Card>
+
+        <Card titulo="#08 - Comunicação Indireta" color="#474747">
+            <Super/>
+        </Card>
+
+        <Card titulo="#07 - Comunicação Direta" color="#363636">
+            <Pai regiao="Hyrule Castle"/>
+        </Card>
 
         <Card titulo="#06 - Condicional com If tag" color="#A8A7A7">
             <CondicionalIf numero = {11}></CondicionalIf>
