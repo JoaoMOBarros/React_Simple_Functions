@@ -14,12 +14,17 @@ import Super from './component/comunicacao/indireta/Super.jsx'
 import Input from './component/form/Input'
 import InputBlock from './component/search/InputBlock'
 
+import Login from './component/login'
+
 import Card from './component/layout/Card'
 import {Link} from 'react-router-dom'
 
 export default(props)=>(
     <div>
         <div className="app">
+        <Card>
+            <Login/>
+        </Card>
 
         <Card titulo="#10 - Search Function" color="#CC527A">
             <InputBlock/>

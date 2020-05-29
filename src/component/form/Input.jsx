@@ -17,8 +17,6 @@ function Input(drops) {
                 onChange={(e) => setNome(e.target.value)}
                 value={nome}
             />
-
-            
         </div>
     );
 }

@@ -5,6 +5,10 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import App from "./App";
 import App2 from "./App2";
 
+import axios from 'axios'
+
+axios.defaults.withCredentials = true;
+
 ReactDOM.render(
     <Router>
         <Switch>
